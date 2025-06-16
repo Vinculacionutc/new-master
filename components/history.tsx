@@ -9,9 +9,6 @@ import {
   Zap,
   Users,
   Award,
-  Flag,
-  User,
-  ScrollText
 } from 'lucide-react';
 
 // Interfaces
@@ -23,14 +20,7 @@ interface HitoHistorico {
   color: string;
 }
 
-interface EtapaDesarrollo {
-  periodo: string;
-  titulo: string;
-  descripcion: string;
-  icono: React.ComponentType<{ className?: string }>;
-  color: string;
-  logros: string[];
-}
+
 
 interface FundadorInfo {
   nombre: string;
