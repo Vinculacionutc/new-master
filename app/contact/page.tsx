@@ -499,7 +499,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-white">Teléfono</h3>
-                      <p className="text-gray-300">+593 123 456 789</p>
+                      <p className="text-gray-300">+593 980265231</p>
                     </div>
                   </motion.div>
                   
@@ -512,7 +512,7 @@ const Contact = () => {
                     </div>
                     <div>
                       <h3 className="text-xl font-semibold text-white">Correo</h3>
-                      <p className="text-gray-300">info@camaradecomerciolamana.com</p>
+                      <p className="text-gray-300">camaradecomerciolamana@gmail.com</p>
                     </div>
                   </motion.div>
                 </div>
