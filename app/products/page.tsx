@@ -43,7 +43,7 @@ const Products = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/productos/');
+        const response = await fetch('https://api.camaradecomerciolamana.com/api/productos/');
         if (!response.ok) throw new Error('Failed to fetch products');
         const data = await response.json();
         setProducts(data.results);
@@ -57,7 +57,7 @@ const Products = () => {
 
     const fetchCompanies = async () => {
       try {
-        const response = await fetch('http://127.0.0.1:8000/api/empresas/');
+        const response = await fetch('https://api.camaradecomerciolamana.com/api/empresas/');
         if (!response.ok) throw new Error('Failed to fetch companies');
         const data = await response.json();
         setCompanies(data.results);

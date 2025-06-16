@@ -157,7 +157,7 @@ const JoinForm = () => {
     setSubmitStatus({ type: "", message: "" });
 
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/socios/', {
+      const response = await fetch('https://api.camaradecomerciolamana.com/api/socios/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

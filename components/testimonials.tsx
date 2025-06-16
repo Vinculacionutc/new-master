@@ -54,7 +54,7 @@ const TestimonialsCarousel: FC = () => {
     const fetchTestimonios = async () => {
       try {
         setIsLoading(true);
-        const response = await fetch('http://127.0.0.1:8000/api/testimonios/');
+        const response = await fetch('https://api.camaradecomerciolamana.com/api/testimonios/');
         if (!response.ok) throw new Error('Error al cargar los testimonios');
         const data = await response.json();
         setTestimonios(data.results);

@@ -111,7 +111,7 @@ const Companies: React.FC = () => {
   useEffect(() => {
     const fetchEmpresas = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/api/empresas/")
+        const response = await fetch("https://api.camaradecomerciolamana.com/api/empresas/")
         if (!response.ok) throw new Error("Failed to fetch")
         
         const data: ApiResponse = await response.json()

@@ -222,7 +222,7 @@ const CompanyDetail = () => {
 
   useEffect(() => {
     const fetchCompany = async () => {
-      const response = await fetch(`http://127.0.0.1:8000/api/empresas/${id}/`);
+      const response = await fetch(`https://api.camaradecomerciolamana.com/api/empresas/${id}/`);
       if (!response.ok) throw new Error('Failed to fetch company');
       const data = await response.json();
       setCompany(data);

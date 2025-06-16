@@ -189,7 +189,7 @@ const CVForm = () => {
         formDataToSend.append('cv', formData.cv_file);
       }
 
-      const response = await fetch('http://127.0.0.1:8000/api/aplicaciones-trabajo/', {
+      const response = await fetch('https://api.camaradecomerciolamana.com/api/aplicaciones-trabajo/', {
         method: 'POST',
         body: formDataToSend,
       });

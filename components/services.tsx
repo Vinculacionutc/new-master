@@ -53,7 +53,7 @@ const Services = () => {
   useEffect(() => {
     const fetchServices = async () => {
       try {
-        const response = await fetch("http://127.0.0.1:8000/api/servicios/")
+        const response = await fetch("https://api.camaradecomerciolamana.com/api/servicios/")
         if (!response.ok) throw new Error("Failed to fetch services")
         const data: APIResponse = await response.json()
         setServices(data.results)
