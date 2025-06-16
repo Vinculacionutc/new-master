@@ -261,43 +261,7 @@ const HistoriaCamaraComercioLaMana: React.FC = () => {
           })}
         </div>
 
-        {/* Etapas de Desarrollo */}
-        <div className="grid md:grid-cols-3 gap-8 mt-16">
-          {etapasDesarrollo.map((etapa, index) => {
-            const Icon = etapa.icono;
-            return (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 50 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                className={`
-                  p-4 sm:p-6 md:p-8 rounded-2xl shadow-2xl 
-                  bg-blue-950
-                  transform transition-all duration-300 hover:scale-105
-                `}
-              >
-                <div className="flex items-center mb-6">
-                  <div className={`${etapa.color} p-3 rounded-full mr-4`}>
-                    <Icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-white">
-                    {etapa.titulo}
-                  </h3>
-                </div>
-                <p className="text-gray-400 mb-4">{etapa.descripcion}</p>
-                <h4 className="text-xl font-semibold text-red-600 mb-2">
-                  Periodo: {etapa.periodo}
-                </h4>
-                <h5 className="text-red-600 font-semibold">Logros:</h5>
-                <ul className="list-disc list-inside text-gray-300">
-                  {etapa.logros.map((logro, index) => (
-                    <li className='list-none' key={index}>{logro}</li>
-                  ))}
-                </ul>
-              </motion.div>
-            );
-          })}
-        </div>
+       
 
         {/* Resoluciones Fundacionales */}
         <motion.div
