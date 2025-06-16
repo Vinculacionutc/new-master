@@ -303,7 +303,7 @@ const Companies: React.FC = () => {
               target="_blank"
               className="inline-flex items-center text-red-600 hover:text-red-500 transition-colors"
             >
-              Visitar Sitio Web
+              Visitar Red Social
               <ExternalLink className="ml-2 w-4 h-4" />
             </Link>
           </TabsContent>
