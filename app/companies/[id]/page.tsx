@@ -339,7 +339,7 @@ const CompanyDetail = () => {
                   onClick={() => window.open(company.sitio_web, '_blank')}
                 >
                   <Globe className="w-4 h-4 mr-2" />
-                  Visitar Sitio Web
+                  Visitar R
                 </Button>
               </CardContent>
             </Card>
