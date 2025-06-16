@@ -1,7 +1,6 @@
 'use client';
 
 import { useState } from 'react';
-import { toast } from 'react-hot-toast';
 import { motion, AnimatePresence } from 'framer-motion';
 import { AlertCircle, CheckCircle, X, ArrowRight } from "lucide-react";
 import { Input } from "@/components/ui/input";

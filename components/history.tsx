@@ -3,8 +3,6 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
-  Clock,
-  TrendingUp,
   Layers,
   Target,
   Rocket,

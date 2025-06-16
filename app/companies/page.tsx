@@ -125,7 +125,7 @@ const Companies: React.FC = () => {
         setCategories(uniqueCategories)
         
         setLoading(false)
-      } catch (error) {
+      } catch {
         setError("Error al cargar las empresas")
         setLoading(false)
       }

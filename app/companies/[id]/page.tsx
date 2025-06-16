@@ -20,7 +20,7 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 import { useState, useEffect } from 'react';
-import type { DialogContentProps, DialogTitleProps, DialogDescriptionProps } from "@radix-ui/react-dialog";
+
 import { getCloudinaryUrl } from '@/utils/image';
 
 interface Product {

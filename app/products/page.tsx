@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import { ShoppingBag, Star } from 'lucide-react';
 import Image from "next/image";
 import Link from "next/link";
+import { getCloudinaryUrl } from '@/utils/image'
 
 import { Input } from "@/components/ui/input";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
