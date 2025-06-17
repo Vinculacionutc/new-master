@@ -20,7 +20,7 @@ const HeroSection = () => {
     },
     {
       icon: Users,
-      value: '20+',
+      value: '100+',
       description: 'Miembros Activos',
       subtext: 'Red empresarial'
     },

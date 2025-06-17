@@ -102,8 +102,7 @@ const HistoriaCamaraComercioLaMana: React.FC = () => {
             comerciantes del Cantón con el propósito de formar la Cámara de Comercio con la asistencia de 21 ciudadanos.
           </p>
           <p className="mb-4">
-            Tomó la palabra el Sr. Gonzalo Llumiluiza, destacado y claro visionario económico, exponiendo la importancia de 
-            impulsar esta práctica como Cámara de Comercio desde nuestros días los primeros pasos.
+            Toma la palabra el Sr. Gonzalo Llumiluiza, saludando y dango una cordial bienvenida, evocando la importancia de adquirir vida jurídica como Cámara de Comercio siendo necesario dar los primeros pasos.
           </p>
           <p>
             Seguidamente solicitó la participación de los Sres. Julián Maldonado y Mario Defáz como vocales principales y la 

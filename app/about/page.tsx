@@ -43,7 +43,7 @@ const About = () => {
     },
     {
       title: "Miembros Activos",
-      value: "20+",
+      value: "100+",
       icon: Users,
       description: "Profesionales comprometidos con el crecimiento regional"
     },
