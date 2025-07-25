@@ -203,7 +203,7 @@ const ProductModal = ({ children, product, company }: { children: React.ReactNod
               onClick={() => window.open(company.sitio_web, '_blank')}
             >
               <ShoppingCart className="w-5 h-5 mr-2" />
-              Contactarse para compra - {product.precio}
+              Contactarse para compra
             </Button>
             <Button 
               className="w-full bg-blue-950 hover:bg-blue-900 text-white"
