@@ -179,10 +179,7 @@ const Companies: React.FC = () => {
         <CardContent className="p-4 pt-2">
           <p className="text-gray-600 mb-4 line-clamp-3">{empresa.descripcion}</p>
           <div className="grid grid-cols-2 gap-2 mb-4">
-            <div className="flex items-center text-sm text-gray-600">
-              <Users className="w-4 h-4 mr-2 text-red-600" />
-              {empresa.empleados} empleados
-            </div>
+            
             <div className="flex items-center text-sm text-gray-600">
               <Box className="w-4 h-4 mr-2 text-red-600" />
               {empresa.productos.length} productos

@@ -2,7 +2,7 @@
 import { useParams } from 'next/navigation';
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaFacebook, FaInstagram, FaTwitter } from 'react-icons/fa';
+import { FaFacebook, FaInstagram, FaTwitter, FaTiktok, FaLinkedin } from 'react-icons/fa';
 import {
   MessageCircle, Phone, MapPin, Award, Mail,
   Target, Globe, Star, ChevronRight, ShoppingCart,
@@ -57,6 +57,11 @@ interface Company {
   logo_url: string;
   galeria: string[];
   productos: Product[];
+  facebook?: string;
+  twitter?: string;
+  instagram?: string;
+  tiktok?: string;
+  linkedin?: string;
 }
 
 const ProductCard = ({ product, company }: { product: Product; company: Company }) => {
@@ -95,10 +100,10 @@ const ProductCard = ({ product, company }: { product: Product; company: Company 
       <CardContent className="p-6 space-y-4">
         <div className="space-y-2">
           <div className="flex items-center justify-between">
-            <h3 className="text-xl font-bold text-blue-950 group-hover:text-red-600 transition-colors">
+            <h3 className="text-xl font-bold text-blue-950 transition-colors">
               {product.nombre}
             </h3>
-            <span className="text-lg font-bold text-red-600">{product.precio}</span>
+            
           </div>
         </div>
 
@@ -334,13 +339,68 @@ const CompanyDetail = () => {
                     <span className="font-medium">{company.correo}</span>
                   </div>
                 </div>
-                <Button 
-                  className="w-full bg-red-600 hover:bg-red-700 text-white"
-                  onClick={() => window.open(company.sitio_web, '_blank')}
-                >
-                  <Globe className="w-4 h-4 mr-2" />
-                  Visitar Red Social
-                </Button>
+                <div className="flex gap-2 justify-start">
+                  {company.sitio_web && (
+                    <Button 
+                      variant="outline"
+                      size="icon"
+                      className="bg-gray-100 hover:bg-gray-200"
+                      onClick={() => window.open(company.sitio_web, '_blank')}
+                    >
+                      <Globe className="w-4 h-4" />
+                    </Button>
+                  )}
+                  {company.facebook && (
+                    <Button 
+                      variant="outline"
+                      size="icon"
+                      className="bg-[#1877F2] hover:bg-[#1864F2] text-white"
+                      onClick={() => window.open(company.facebook, '_blank')}
+                    >
+                      <FaFacebook className="w-4 h-4" />
+                    </Button>
+                  )}
+                  {company.twitter && (
+                    <Button 
+                      variant="outline"
+                      size="icon"
+                      className="bg-[#1DA1F2] hover:bg-[#1A8CD8] text-white"
+                      onClick={() => window.open(company.twitter, '_blank')}
+                    >
+                      <FaTwitter className="w-4 h-4" />
+                    </Button>
+                  )}
+                  {company.instagram && (
+                    <Button 
+                      variant="outline"
+                      size="icon"
+                      className="bg-[#E4405F] hover:bg-[#D62E55] text-white"
+                      onClick={() => window.open(company.instagram, '_blank')}
+                    >
+                      <FaInstagram className="w-4 h-4" />
+                    </Button>
+                  )}
+                  {company.tiktok && (
+                    <Button 
+                      variant="outline"
+                      size="icon"
+                      className="bg-[#000000] hover:bg-[#333333] text-white"
+                      onClick={() => window.open(company.tiktok, '_blank')}
+                    >
+                      <FaTiktok className="w-4 h-4" />
+                    </Button>
+                  )}
+                  {company.linkedin && (
+                    <Button 
+                      variant="outline"
+                      size="icon"
+                      className="bg-[#0A66C2] hover:bg-[#084E96] text-white"
+                      onClick={() => window.open(company.linkedin, '_blank')}
+                    >
+                      <FaLinkedin className="w-4 h-4" />
+                    </Button>
+                  )}
+                </div>
               </CardContent>
             </Card>
 
