@@ -339,7 +339,7 @@ const CompanyDetail = () => {
                     <span className="font-medium">{company.correo}</span>
                   </div>
                 </div>
-                <div className="flex gap-2 justify-start">
+                <div className="flex gap-5 justify-start">
                   {company.sitio_web && (
                     <Button 
                       variant="outline"
@@ -390,16 +390,7 @@ const CompanyDetail = () => {
                       <FaTiktok className="w-4 h-4" />
                     </Button>
                   )}
-                  {company.linkedin && (
-                    <Button 
-                      variant="outline"
-                      size="icon"
-                      className="bg-[#0A66C2] hover:bg-[#084E96] text-white"
-                      onClick={() => window.open(company.linkedin, '_blank')}
-                    >
-                      <FaLinkedin className="w-4 h-4" />
-                    </Button>
-                  )}
+                  
                 </div>
               </CardContent>
             </Card>
