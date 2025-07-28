@@ -98,11 +98,11 @@ const Footer = () => {
             <div className="space-y-3">
               <div className="bg-blue-900/50 p-3 rounded-lg">
                 <p className="font-medium">Lunes a Viernes</p>
-                <p className="text-gray-300">8:00 AM - 5:00 PM</p>
+                <p className="text-gray-300">8:00 AM - 17:00 PM</p>
               </div>
               <div className="bg-blue-900/50 p-3 rounded-lg">
                 <p className="font-medium">Sábados</p>
-                <p className="text-gray-300">9:00 AM - 1:00 PM</p>
+                <p className="text-gray-300">9:00 AM - 13:00 PM</p>
               </div>
               <div className="bg-blue-900/50 p-3 rounded-lg">
                 <p className="font-medium">Domingos</p>

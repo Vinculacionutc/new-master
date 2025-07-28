@@ -134,7 +134,7 @@ const Companies: React.FC = () => {
           transition={{ duration: 0.5 }}
           className="text-4xl font-bold text-center mb-12 text-blue-950"
         >
-          Directorio <span className="text-red-600">Empresarial</span>
+          Empresas <span className="text-red-600">Asociadas</span>
         </motion.h1>
 
         <Card className="mb-8 bg-white shadow-md">
@@ -165,7 +165,17 @@ const Companies: React.FC = () => {
                   <Filter className="w-4 h-4 mr-2" />
                   Todas
                 </button>
-                {categories.map((category) => (
+                {[
+                  'Hoteles',
+                  'Restaurante',
+                  'Comisariatos',
+                  'Productos Naturales',
+                  'Funerarias',
+                  'Almacén de ropa',
+                  'Servicios Tecnológicos',
+                  'Almacén de repuestos',
+                  'Belleza y Maquillaje'
+                ].filter(category => categories.includes(category)).map((category) => (
                   <button
                     key={category}
                     onClick={() => setSelectedCategory(category)}

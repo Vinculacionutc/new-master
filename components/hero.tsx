@@ -74,7 +74,7 @@ const HeroSection = () => {
                 className="group inline-flex items-center gap-2 bg-gradient-to-r from-red-600 to-red-500 text-white px-8 py-4 rounded-lg font-semibold transition-all hover:shadow-lg hover:shadow-red-500/20 hover:-translate-y-0.5"
               >
                 <span className="flex items-center gap-2">
-                  Directorio Empresarial
+                  Empresas Asociadas
                   <ArrowRight className="transition-transform group-hover:translate-x-1" />
                 </span>
               </Link>

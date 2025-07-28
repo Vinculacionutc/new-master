@@ -42,7 +42,7 @@ const HistoriaCamaraComercioLaMana: React.FC = () => {
     {
       año: 2002,
       titulo: "Primera Transformación",
-      descripcion: "Modernización de servicios y organizacional",
+      descripcion: "Modernización de servicios y estructura organizacional",
       icono: Layers,
       color: "bg-red-600"
     },
@@ -97,7 +97,7 @@ const HistoriaCamaraComercioLaMana: React.FC = () => {
         >
           <h2 className="text-3xl font-bold mb-4 text-red-600">Acta de Fundación</h2>
           <p className="mb-4">
-            Siendo las veinte y un horas del primero de septiembre de mil novecientos noventa y cuatro en el local comercial 
+            Siendo primero de septiembre de mil novecientos noventa y cuatro en el local comercial 
             &ldquo;SORAYA&rdquo;, ubicado en las calles Amazonas y 27 de Noviembre, en esta ciudad de La Maná, se reúnen los señores 
             comerciantes del Cantón con el propósito de formar la Cámara de Comercio con la asistencia de 21 ciudadanos.
           </p>
@@ -112,11 +112,40 @@ const HistoriaCamaraComercioLaMana: React.FC = () => {
           </p>
         </motion.div>
 
+        {/* Resoluciones Fundacionales */}
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          className="mt-16 bg-blue-950 p-8 rounded-2xl shadow-2xl"
+        >
+          <h2 className="text-3xl font-bold mb-6 text-red-600">Resoluciones Fundacionales</h2>
+          <ol className="space-y-4 text-white">
+            <li className="flex items-start">
+              <div className="bg-red-600 rounded-full p-2 mr-4 mt-1">
+                <Award className="w-5 h-5 text-white" />
+              </div>
+              <p>La Asamblea por unanimidad acordó formar la Cámara de Comercio.</p>
+            </li>
+            <li className="flex items-start">
+              <div className="bg-red-600 rounded-full p-2 mr-4 mt-1">
+                <Award className="w-5 h-5 text-white" />
+              </div>
+              <p>Formar un directorio provisional entre los presentes.</p>
+            </li>
+            <li className="flex items-start">
+              <div className="bg-red-600 rounded-full p-2 mr-4 mt-1">
+                <Award className="w-5 h-5 text-white" />
+              </div>
+              <p>Iniciar los trámites con la ayuda del señor Pablo Maldonado y el señor Mario Ortega.</p>
+            </li>
+          </ol>
+        </motion.div>
+
         {/* Directiva Fundadora */}
         <motion.div
           initial={{ opacity: 0, y: 50 }}
           whileInView={{ opacity: 1, y: 0 }}
-          className="mb-16"
+          className="mb-16 py-16"
         >
           <h2 className="text-3xl font-bold mb-8 text-center text-blue-950">Directiva Fundadora</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4 sm:gap-6">
@@ -179,34 +208,7 @@ const HistoriaCamaraComercioLaMana: React.FC = () => {
 
        
 
-        {/* Resoluciones Fundacionales */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          className="mt-16 bg-blue-950 p-8 rounded-2xl shadow-2xl"
-        >
-          <h2 className="text-3xl font-bold mb-6 text-red-600">Resoluciones Fundacionales</h2>
-          <ol className="space-y-4 text-white">
-            <li className="flex items-start">
-              <div className="bg-red-600 rounded-full p-2 mr-4 mt-1">
-                <Award className="w-5 h-5 text-white" />
-              </div>
-              <p>La Asamblea por unanimidad acordó formar la Cámara de Comercio.</p>
-            </li>
-            <li className="flex items-start">
-              <div className="bg-red-600 rounded-full p-2 mr-4 mt-1">
-                <Award className="w-5 h-5 text-white" />
-              </div>
-              <p>Formar un directorio provisional entre los presentes.</p>
-            </li>
-            <li className="flex items-start">
-              <div className="bg-red-600 rounded-full p-2 mr-4 mt-1">
-                <Award className="w-5 h-5 text-white" />
-              </div>
-              <p>Iniciar los trámites con la ayuda del señor Pablo Maldonado y el señor Mario Ortega.</p>
-            </li>
-          </ol>
-        </motion.div>
+        
 
         {/* Modal de Detalles de Hito Histórico */}
         <AnimatePresence>

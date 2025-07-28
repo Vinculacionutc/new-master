@@ -79,8 +79,11 @@ const JoinForm = () => {
         }
         break;
       case "telefono":
+        const phoneRegex = /^(02|09)\d{8}$/;
         if (!value.trim()) {
           errorMessage = "El teléfono es requerido";
+        } else if (!phoneRegex.test(value)) {
+          errorMessage = "El teléfono debe tener 10 dígitos y empezar con 02 o 09";
         }
         break;
       case "empresa":
@@ -557,4 +560,4 @@ const JoinForm = () => {
   );
 };
 
-export default JoinForm; 
+export default JoinForm;

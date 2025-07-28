@@ -535,11 +535,11 @@ const Contact = () => {
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-3 rounded-lg bg-blue-900/30 hover:bg-blue-900/50 transition-colors">
                     <span className="text-gray-300">Lunes a Viernes</span>
-                    <span className="text-white font-semibold">8:00 AM - 5:00 PM</span>
+                    <span className="text-white font-semibold">8:00 AM - 17:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center p-3 rounded-lg bg-blue-900/30 hover:bg-blue-900/50 transition-colors">
                     <span className="text-gray-300">Sábados</span>
-                    <span className="text-white font-semibold">9:00 AM - 1:00 PM</span>
+                    <span className="text-white font-semibold">9:00 AM - 13:00 PM</span>
                   </div>
                   <div className="flex justify-between items-center p-3 rounded-lg bg-blue-900/30 hover:bg-blue-900/50 transition-colors">
                     <span className="text-gray-300">Domingos</span>

@@ -360,7 +360,7 @@ const Companies: React.FC = () => {
           animate={{ opacity: 1, y: 0 }}
           className="text-5xl font-extrabold text-center mb-12 text-blue-950"
         >
-          Nuestras <span className="text-red-600">Empresas</span>
+          Empresas <span className="text-red-600">Asociadas</span>
         </motion.h1>
 
         <Card className="mb-8 bg-white border border-gray-200">
@@ -391,7 +391,17 @@ const Companies: React.FC = () => {
                   <Filter className="w-4 h-4 mr-2" />
                   Todas
                 </button>
-                {categories.map((category) => (
+                {[
+                  'Hoteles',
+                  'Restaurante',
+                  'Comisariatos',
+                  'Productos Naturales',
+                  'Funerarias',
+                  'Almacén de ropa',
+                  'Servicios Tecnológicos',
+                  'Almacén de repuestos',
+                  'Belleza y Maquillaje'
+                ].map((category) => (
                   <button
                     key={category}
                     onClick={() => setSelectedCategory(category)}

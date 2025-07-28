@@ -126,13 +126,10 @@ const Index = () => {
             </section>
           </div>
           
-          {/* News Section */}
-          <section id="news" className="section-container bg-gray-50 py-20">
-            <News />
-          </section>
+          
           
           {/* Testimonials Section */}
-          <section id="testimonials" className="section-container py-20">
+          <section id="testimonials" className="section-container py-16">
             <Testimonials />
           </section>
         </main>
