@@ -8,7 +8,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 import Testimonials from '@/components/testimonials';
 import EmpresaList from '@/components/companies';
-import News from '@/components/news';
+
 import LegalFoundationSection from '@/components/found';
 import ValoresInstitucionales from '@/components/values';
 import EstructuraOrganizacional from '@/components/structure';
