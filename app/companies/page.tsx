@@ -90,7 +90,6 @@ const Companies: React.FC = () => {
   const [filteredEmpresas, setFilteredEmpresas] = useState<Empresa[]>([])
   const [searchTerm, setSearchTerm] = useState("")
   const [selectedCategory, setSelectedCategory] = useState<string | null>(null)
-  const [categories, setCategories] = useState<string[]>([])
   const [loading, setLoading] = useState(true)
   const [error, setError] = useState<string | null>(null)
   const [selectedEmpresa, setSelectedEmpresa] = useState<Empresa | null>(null)
@@ -117,12 +116,6 @@ const Companies: React.FC = () => {
         const data: ApiResponse = await response.json()
         setEmpresas(data.results)
         setFilteredEmpresas(data.results)
-        
-        // Extract unique categories
-        const uniqueCategories = Array.from(
-          new Set(data.results.map((empresa: Empresa) => empresa.categoria_nombre))
-        )
-        setCategories(uniqueCategories)
         
         setLoading(false)
       } catch {
@@ -392,9 +385,9 @@ const Companies: React.FC = () => {
                   Todas
                 </button>
                 {[
-                  'Hoteles',
-                  'Restaurante',
                   'Comisariatos',
+                  'Restaurante',
+                  'Hoteles',
                   'Productos Naturales',
                   'Funerarias',
                   'Almacén de ropa',
@@ -448,4 +441,3 @@ const Companies: React.FC = () => {
   )
 }
 export default Companies
-
