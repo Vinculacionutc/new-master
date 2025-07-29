@@ -12,6 +12,7 @@ const JoinForm = () => {
   const [formData, setFormData] = useState({
     nombre: '',
     apellido: '',
+    cedula: '',
     email: '',
     telefono: '',
     empresa: '',
@@ -25,6 +26,7 @@ const JoinForm = () => {
   const [errors, setErrors] = useState({
     nombre: '',
     apellido: '',
+    cedula: '',
     email: '',
     telefono: '',
     empresa: '',
@@ -84,6 +86,14 @@ const JoinForm = () => {
           errorMessage = "El teléfono es requerido";
         } else if (!phoneRegex.test(value)) {
           errorMessage = "El teléfono debe tener 10 dígitos y empezar con 02 o 09";
+        }
+        break;
+      case "cedula":
+        const cedulaRegex = /^\d{10}$/;
+        if (!value.trim()) {
+          errorMessage = "La cédula es requerida";
+        } else if (!cedulaRegex.test(value)) {
+          errorMessage = "La cédula debe tener exactamente 10 dígitos";
         }
         break;
       case "empresa":
@@ -180,6 +190,7 @@ const JoinForm = () => {
       setFormData({
         nombre: '',
         apellido: '',
+        cedula: '',
         email: '',
         telefono: '',
         empresa: '',
@@ -294,6 +305,33 @@ const JoinForm = () => {
                 <p className="text-red-500 text-xs mt-1 flex items-center">
                   <AlertCircle size={12} className="mr-1" />
                   {errors.apellido}
+                </p>
+              )}
+            </div>
+          </motion.div>
+
+          <motion.div variants={itemVariants} className="space-y-1">
+            <Label htmlFor="cedula" className="text-white flex items-center text-sm">
+              Cédula <span className="text-red-500 ml-1">*</span>
+            </Label>
+            <div className="relative">
+              <Input
+                id="cedula"
+                name="cedula"
+                value={formData.cedula}
+                onChange={handleChange}
+                placeholder="Número de cédula"
+                className={`
+                  bg-[#2a357e] text-white border-[#3a447e]
+                  focus:border-red-500 focus:ring-red-500
+                  placeholder:text-gray-400
+                  ${errors.cedula ? 'border-red-500' : ''}
+                `}
+              />
+              {errors.cedula && (
+                <p className="text-red-500 text-xs mt-1 flex items-center">
+                  <AlertCircle size={12} className="mr-1" />
+                  {errors.cedula}
                 </p>
               )}
             </div>

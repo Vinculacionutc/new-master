@@ -200,17 +200,10 @@ const ProductModal = ({ children, product, company }: { children: React.ReactNod
           <div className="space-y-4 pt-4">
             <Button 
               className="w-full bg-red-600 hover:bg-red-700 text-white"
-              onClick={() => window.open(company.sitio_web, '_blank')}
+              onClick={() => window.open(`https://wa.me/${company.telefono.replace(/[^0-9]/g, '')}?text=Hola, estoy interesado en comprar: ${product.nombre}`, '_blank')}
             >
               <ShoppingCart className="w-5 h-5 mr-2" />
               Contactarse para compra
-            </Button>
-            <Button 
-              className="w-full bg-blue-950 hover:bg-blue-900 text-white"
-              onClick={() => window.open(`https://wa.me/${company.telefono.replace(/[^0-9]/g, '')}?text=Hola, estoy interesado en sus productos`, '_blank')}
-            >
-              <MessageCircle className="w-4 h-4 mr-2" />
-              Whatsapp
             </Button>
           </div>
         </div>
