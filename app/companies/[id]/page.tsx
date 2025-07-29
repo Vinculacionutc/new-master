@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { FaFacebook, FaInstagram, FaTwitter, FaTiktok} from 'react-icons/fa';
 import {
-  MessageCircle, Phone, MapPin, Award, Mail,
+  Phone, MapPin, Award, Mail,
   Target, Globe, Star, ChevronRight, ShoppingCart,
   Camera, ArrowRight
 } from 'lucide-react';
