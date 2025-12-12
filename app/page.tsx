@@ -4,7 +4,7 @@
 "use client";
 
 import { useEffect, useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion, AnimatePresence } from 'framer-motisdsaon';
 
 import Testimonials from '@/components/testimonials';
 import EmpresaList from '@/components/companies';
